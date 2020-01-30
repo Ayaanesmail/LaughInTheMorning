@@ -20,4 +20,4 @@ client = Client(account_sid, account_token)
 client.messages.create( 
     from_= "", #Insert number here
     to = "", #Insert number here
-    body = "Checkout Ayaan's funny thing of the day! https://soundcloud.com/ayaan-esmail/indian-look-alive" 
+    body = "Checkout the funny thing of the day! youtube.com" + "e[1].get('href')" 
