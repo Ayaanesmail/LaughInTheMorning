@@ -1,0 +1,23 @@
+import bs4, requests    
+
+t = requests.get('https://www.youtube.com/user/comedycentral/videos')     
+
+q = bs4.BeautifulSoup(t.text) 
+
+e = q.select('a[href*="/watch"]') 
+
+pip install twilio
+
+import os
+from twilio.rest import Client
+
+
+account_sid = "AC6a516e787087021e522cabb3c6c37843"
+account_token = "116ef51dcbf4502a54f102ce3502eeac"
+
+client = Client(account_sid, account_token)
+
+client.messages.create( 
+    from_= "(587) 809-6471", 
+    to = "647-524-5758",
+    body = "Checkout Ayaan's funny thing of the day! https://soundcloud.com/ayaan-esmail/indian-look-alive" 
