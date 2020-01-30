@@ -18,6 +18,6 @@ account_token = "116ef51dcbf4502a54f102ce3502eeac"
 client = Client(account_sid, account_token)
 
 client.messages.create( 
-    from_= "(587) 809-6471", 
-    to = "647-524-5758",
+    from_= "", #Insert number here
+    to = "", #Insert number here
     body = "Checkout Ayaan's funny thing of the day! https://soundcloud.com/ayaan-esmail/indian-look-alive" 
